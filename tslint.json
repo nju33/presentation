@@ -1,0 +1,6 @@
+{
+  "extends": ["@geekcojp/tslint-config"],
+  "rules": {
+    "react-this-binding-issue": "off"
+  }
+}
