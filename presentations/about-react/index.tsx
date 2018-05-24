@@ -19,6 +19,8 @@ import {
 } from '@presentation/common.component';
 import {PageWithRouter} from './page';
 // @ts-ignore
+import ReactSvg from './assets/images/react.svg';
+// @ts-ignore
 import JsxPng from './assets/images/jsx.png';
 // @ts-ignore
 import babelSvg from './assets/images/babel.svg';
@@ -26,6 +28,8 @@ import babelSvg from './assets/images/babel.svg';
 import typescriptSvg from './assets/images/typescript.svg';
 // @ts-ignore
 import webpackSvg from './assets/images/webpack.svg';
+// @ts-ignore
+import trendPng from './assets/images/trend.png';
 // @ts-ignore
 import reactCreateElementPng from './assets/images/react-create-element.png';
 // @ts-ignore
@@ -47,7 +51,7 @@ interface PresentationState {
 }
 
 class Presentation extends React.Component<{}, PresentationState> {
-  pageNum = 9;
+  pageNum = 10;
 
   constructor(props: {}) {
     super(props);
@@ -82,6 +86,7 @@ class Presentation extends React.Component<{}, PresentationState> {
                         <PageWithRouter pageNum={this.pageNum}>
                           <TitleOnly>
                             <Title>
+                              <img src={ReactSvg} style={{width: '3em', position: 'absolute', right: '51%', transform: 'translateX(50%)', top: '6.1em'}} />
                               <Accent>React</Accent>勉強会<sup>@1</sup>
                             </Title>
                           </TitleOnly>
@@ -221,6 +226,21 @@ class Presentation extends React.Component<{}, PresentationState> {
                         <PageWithRouter pageNum={this.pageNum}>
                           <Center>
                             <SubTitle>
+                              一番ダウンロードされてる
+                            </SubTitle>
+                            <small>http://www.npmtrends.com/react-vs-preact-vs-vue-vs-hyperapp-vs-@angular/core-vs-angular-vs-riot</small>
+                            <img src={trendPng} alt="trand" style={{background: '#fff', width: 'calc(100% + 20em)', marginLeft: '-10em'}} />
+                          </Center>
+                        </PageWithRouter>
+                      )}
+                    />
+                    <Route
+                      exact
+                      path="/6"
+                      component={() => (
+                        <PageWithRouter pageNum={this.pageNum}>
+                          <Center>
+                            <SubTitle>
                               <Accent>React</Accent>を書いてみる
                             </SubTitle>
                             <About>
@@ -240,7 +260,7 @@ class Presentation extends React.Component<{}, PresentationState> {
                     />
                     <Route
                       exact
-                      path="/6"
+                      path="/7"
                       component={() => (
                         <PageWithRouter pageNum={this.pageNum}>
                           <Center>
@@ -264,7 +284,7 @@ class Presentation extends React.Component<{}, PresentationState> {
                     />
                     <Route
                       exact
-                      path="/7"
+                      path="/8"
                       component={() => (
                         <PageWithRouter pageNum={this.pageNum}>
                           <Center>
@@ -296,7 +316,7 @@ class Presentation extends React.Component<{}, PresentationState> {
                     />
                     <Route
                       exact
-                      path="/8"
+                      path="/9"
                       component={() => (
                         <PageWithRouter pageNum={this.pageNum}>
                           <Center>
@@ -332,7 +352,7 @@ class Presentation extends React.Component<{}, PresentationState> {
                     />
                     <Route
                       exact
-                      path="/9"
+                      path="/10"
                       component={() => (
                         <PageWithRouter pageNum={this.pageNum}>
                           <TitleOnly>
