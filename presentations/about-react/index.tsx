@@ -289,7 +289,7 @@ class Presentation extends React.Component<{}, PresentationState> {
                         <PageWithRouter pageNum={this.pageNum}>
                           <Center>
                             <SubTitle>
-                              <Accent>React</Accent>の開発のサイクルを簡単に
+                              <Accent>React</Accent>の開発のサイクルを簡単に言うと
                             </SubTitle>
                             <About>
                               <li>
@@ -308,6 +308,9 @@ class Presentation extends React.Component<{}, PresentationState> {
                                     <span className="icon-chevrons-right" style={{marginLeft: '2em'}}></span>よくあるのは、APIで取得して<code>state</code>に入れたり
                                   </li>
                                 </About>
+                              </li>
+                              <li><Accent>React</Accent>の<code>state</code>は、ポケモンのヒトカゲ、リザード、リザードンで言うところのヒトカゲ<br/>
+                                WebAppのメインで使うのは辞めたほうが無難
                               </li>
                             </About>
                           </Center>
